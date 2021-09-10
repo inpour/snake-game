@@ -5,7 +5,7 @@ $(function (){
     const height = canvas.height()
     const cellWidth = 12;
 
-    const stageColor = "#a7d948", stageStrokeColor = "#000000";
+    const stageColor = "#ffffff", stageStrokeColor = "#000000";
     const snakeHeadColor = "#0000ff", snakeHeadStrokeColor = "#000000"
     const snakeBodyColor = "#0080ff", snakeBodyStrokeColor = "#000000";
     const foodColor = "#ff0000", foodStrokeColor =  "#000000";
