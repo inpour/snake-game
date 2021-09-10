@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <meta name="keywords" content="snake game, snake, game">
+    <meta name="description" content="Snake Game">
+    <meta name="author" content="Amirhossein Aliakbarpour">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Snake Game</h1>
+        <hr>
+        <br>
+        <div id="canvasContainer" style="float: left;">
+            <canvas id="canvas" width="456px" height="456px"></canvas>
+        </div>
+        <div id="optionsContainer" style="float: left">
+            <br>
+            <div id="buttonContainer">
+                <button id="start" style="">Start</button>
+                <button id="pause" style="display: none">Pause</button>
+                <button id="resume" style="display: none">Resume</button>
+                <button id="restart" style="display: none">Restart</button>
+            </div>
+            <hr>
+            <label class="checkbox">
+                <input type="checkbox">
+                <span class="label-visible">
+                    <span class="fake-checkbox"></span>
+                    <span style="margin-left: 3px">Auto Start after losing.</span>
+                </span>
+            </label>
+            <hr>
+            <p style="margin-left: 13px;">Game Speed:</p>
+            <label class="radio-button" style="margin-left: 30px">
+                <input type="radio" name="gameSpeed">
+                <span class="label-visible">
+                    <span class="fake-radiobutton"></span>
+                    Slow
+                </span>
+            </label>
+            <label class="radio-button">
+                <input type="radio" name="gameSpeed" checked>
+                <span class="label-visible">
+                    <span class="fake-radiobutton"></span>
+                    Normal
+                </span>
+            </label>
+            <label class="radio-button">
+                <input type="radio" name="gameSpeed">
+                <span class="label-visible">
+                    <span class="fake-radiobutton"></span>
+                    Fast
+                </span>
+            </label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
