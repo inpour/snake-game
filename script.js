@@ -42,6 +42,9 @@ $(function (){
     paintStage();
 
     function start(){
+        if (autoStart && lost)
+            clearTimeout(timeoutToStart);
+
         //  default direction
         newDirection = currentDirection = "right";
         score = 0;
@@ -49,7 +52,7 @@ $(function (){
 
         createSnake();
         createFood();
-
+        
         if (gameLoopInterval !== "undefined")
             clearInterval(gameLoopInterval);
         gameLoopInterval = setInterval(gameLoop, gameRepetition);
